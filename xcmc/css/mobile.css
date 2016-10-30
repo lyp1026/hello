@@ -1,0 +1,370 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 640px){
+   /*隐藏电脑端显示的一些不必要标签*/
+    header .headercontent .logo, header .headercontent .tooldiv{
+        display: none;
+    }
+    header{
+        height: 90px;
+        position: relative;
+    }
+    header .headercontent{
+        width: 100%;
+        height: 100%;
+    }
+    header .headercontent .mlogo{
+        width: 80%;
+        position: absolute;
+        left: 10px;
+        bottom:10px;
+    }
+    header .mlogo img{
+        width: 100%;
+    }
+    header .headercontent .mtooldiv{
+        width: 180px;
+        height: 25px;
+        border: 1px solid red;
+        position: absolute;
+        right: 15px;
+        top:40px;
+        color: rgba(59,145,228,1);
+        font-size: 25px;
+        line-height: 25px;
+    }
+    /*控制背景图*/
+    .content .banner{
+
+        width: 100%;
+    }
+    .content .banner img{
+        width:100%;
+    }
+    .content .bannerlist{
+        width: 96%;
+        /*height: 220px;*/
+        /*border: 1px solid red;*/
+        /*margin-top: 600px;*/
+        /*height: 220px;*/
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .content .bannerlist .fdivli{
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+
+    }
+    .content .bannerlist .divli{
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+
+    }
+    .content .bannerlist img{
+        width: 100%;
+    }
+    .content .bannerlist .fdivli span, .content .bannerlist .divli span{
+        font-size: 14px;
+        color: gray;
+        margin-top: 10px;/*转成块级元素*/
+        display: inline-block;
+    }
+    .content .bannerlist .imgdiv{
+        position: relative;
+    }
+    .content .bannerlist .imgdiv .btspan{
+        width: 80px;
+        height: 40px;
+        background-color: black;
+        position: absolute;
+        right: 0px;
+        bottom: 2px;
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        line-height: 40px;
+
+    }
+    /*鼠标覆盖显示蓝色*/
+    .content .bannerlist .divli:hover .btspan{
+        background-color: rgba(28,123,197,1);
+    }
+    /*控制第一个li鼠标覆盖效果*/
+    .content .bannerlist .fdivli .centerdiv {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        background-color: rgba(0,0,0,0.7);/*黑色背景半透明*/
+        -webkit-transition: all 0.5s;
+    }
+    .content .bannerlist .fdivli p{
+        width: 50px;
+        height:50px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../image/ipro_bg.png");
+
+    }
+    /*鼠标覆盖后变蓝色*/
+    .content .bannerlist .fdivli .centerdiv:hover{
+        background-color: rgba(28,123,197,0.8);
+    }
+    /*中间图标变为白色*/
+    .content .bannerlist .fdivli .centerdiv:hover p{
+        background-position:0 -52px;
+    }
+    /*增加新闻*/
+    .content .mainpart{
+        width:100%;
+        /*border: 1px solid greenyellow;*/
+        height: 850px;
+    }
+    .content .mainpart .warpfix{
+        margin-top: 40px;
+        width: 93%;
+        height: 800px;
+        /*border: 1px solid red;*/
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .content .mainpart .warpfix .hdfix{
+        width: 100%;
+        height: 60px;
+    }
+    /*新闻与媒体*/
+    .content .mainpart .warpfix .hdfix .n{
+        float: left;
+        font-size: 25px;
+        height:100%;
+        line-height: 60px;
+        cursor:pointer;
+    }
+    .content .mainpart .warpfix .hdfix .n:hover{
+        color: blue;
+    }
+    .content .mainpart .warpfix .hdfix .refrish{
+       display: none;
+    }
+    /*更多*/
+    .content .mainpart .warpfix .hdfix .gengduo{
+        float: right;
+        height: 28px;
+        line-height: 28px;
+        padding: 20px 10px 0;
+        cursor:pointer;
+    }
+
+    .content .mainpart .warpfix .bdfix{
+        width: 100%;
+        height: 475px;
+        margin-top: 10px;
+    }
+
+    /*新闻与媒体*/
+    .content .mainpart .warpfix .bdfix .inewlist1 .mobile table{
+        display: block;
+        width: 100%;
+
+    }
+    .content .mainpart .warpfix .bdfix .inewlist1 tbody{
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+        color: #666666;
+    }
+    .content .mainpart .warpfix .bdfix .inewlist1 img{
+        width: 100%;
+    }
+    /*隐藏电脑端*/
+    .content .mainpart .warpfix .bdfix .inewlist1 .computer{
+        display: none;
+    }
+    .content .mainpart .warpfix .bdfix .inewlist2{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+    }
+    .content .mainpart .warpfix .bdfix .inewlist2 .fix{
+
+
+    }
+    .content .mainpart .warpfix .bdfix .inewlist2 li{
+        margin-bottom: 12px;
+        padding: 15px 20px;
+        font-family: arial;
+        border: 1px solid #dadada;
+    }
+    .content .mainpart .warpfix .bdfix .inewlist2 .n{
+        height: 30px;
+        line-height:30px;
+        font-size: 16px;
+        white-space: nowrap;
+        color:#333;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+    .content .mainpart .warpfix .bdfix .inewlist2 .time{
+
+        line-height: 26px;
+        font-size: 13px;
+    }
+    .content .mainpart .warpfix .bdfix .inewlist2 .text{
+        line-height: 20px;
+        height: 100%;
+        color: #666;
+        overflow: hidden;
+        font-size: 13px;
+        display: block;
+
+    }
+    .content .mainpart .warpfix .bdfix .inewlist2 li:hover .n{
+        color:rgba(28,123,197,0.8);
+    }
+    .content .mainpart .warpfix .bdfix .inewlist2 li:hover{
+        background-color:rgba(223,223,223,0.3);
+    }
+    /*隐藏徐工电脑端*/
+    .content .mainpart2 .warpfix2 .left .computer{
+        display: none;
+    }
+    .content .mainpart2 .warpfix2 .left .mobile{
+        width:94%;
+        margin-right:auto;
+        margin-left: auto;
+
+    }
+    .content .mainpart2 .warpfix2 .left .mobile h3{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .content .mainpart2 .warpfix2 .left .mobile .leftimgdiv{
+        width:100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .content .mainpart2 .warpfix2 .left  .mobile .leftimgdiv img{
+        width:100%;
+        -webkit-transition: all 1s;
+    }
+    .content .mainpart2 .warpfix2 .left .mobile .zeren{
+        width: 36%;
+        position: relative;
+    }
+
+    .content .mainpart2 .warpfix2 .left .mobile .zeren .n{
+        padding-top: 20px;
+        font-size: 26px;
+        color: #000;
+        font-weight: bold;
+    }
+    .content .mainpart2 .warpfix2 .left .mobile .zeren .text{
+        margin-top: 20px;
+        line-height: 20px;
+        color: #666;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px
+
+}
+.content .mainpart2 .warpfix2 .left  .mobile .leftimgdiv .btdiv{
+    width:50px;
+    height:50px;
+    display: inline-block;
+    position:absolute;
+    right:1px;
+    bottom:1px;
+    background-image: url("../image/more_btn.png");
+}
+.content .mainpart2 .warpfix2 .left  .mobile .leftimgdiv:hover .btdiv{
+    -webkit-opacity:0.7;
+}
+.content .mainpart2 .warpfix2 .left  .mobile .leftimgdiv img:hover{
+    -webkit-transform: scale(1.2,1.2);
+}
+.content .mainpart2 .warpfix2 .left  .mobile ul{
+    color:gray;
+    list-style: none;
+    line-height: 35px;
+    padding-left: 22px;
+    margin-top: 10px;
+}
+
+/*right*/
+    .content .mainpart2 .warpfix2 .right .computer{
+        display: none;
+    }
+    .content .mainpart2 .warpfix2 .right{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        float: right;
+    }
+    .content .mainpart2 .warpfix2 .right .img{
+        width:96%;
+        margin-left: 2%;
+        overflow: hidden;
+    }
+    .content .mainpart2 .warpfix2 .right .img img{
+        width:100%;
+        -webkit-transition: all 1s;
+    }
+    .content .mainpart2 .warpfix2 .right .img:hover img{
+        cursor: pointer;
+        -webkit-transform: scale(1.2,1.2);
+    }
+    .content .mainpart2 .warpfix2 .right .mobile h4{
+        color: black;
+        font-size: 16px;
+        line-height: 17px;
+
+    }
+    .content .mainpart2 .warpfix2 .right .mobile .last{
+        font-size: 14px;
+        text-align: center;
+        color: gray;
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+    }
+    .content .mainpart2 .warpfix2 .right .mobile .last p{
+        margin-top:20px;
+    }
+
+    /*隐藏电脑端*/
+    .footer {
+        display: none;
+    }
+    .foot22{
+        float: left;
+        margin-top: 30px;
+        width: 100%;
+        background-color: black;
+        line-height: 30px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        position: relative;
+    }
+    .foot22 span{
+        text-align: center;
+    }
+
+
+}

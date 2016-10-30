@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/*引入电脑版*/
+@import url(computer.css);
+
+/*引入手机版*/
+@import url(mobile.css);
